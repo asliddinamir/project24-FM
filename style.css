@@ -24,6 +24,10 @@ p {
     color: hsl(27deg, 10%, 52%);
 }
 
+.hidden {
+    display: none;
+}
+
 .container {
     width: 450px;
     display: flex;
@@ -72,6 +76,7 @@ p {
 .chart {
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 .bar {
@@ -79,7 +84,6 @@ p {
     cursor: pointer;
     border-radius: 5px;
     width: 40.8px;
-
 }
 
 #bar1 {
@@ -114,6 +118,17 @@ p {
 .chart p {
     font-size: 12.8px;
     margin-top: .7rem;
+}
+
+.num {
+    width: 40px;
+    font-weight: 700;
+    font-size: 9px;
+    color: #FFFBF6;
+    padding: 0.6em 0.7em 0.6em 0.7em;
+    background-color: hsl(25deg, 47%, 15%);
+    border-radius: 5px;
+    margin-bottom: 1rem;
 }
 
 hr {
@@ -169,8 +184,13 @@ footer a {
         justify-content: space-around;
     }
 
-    .bar {
+    .bar,
+    .num {
         max-width: 30px;
+    }
+
+    .num {
+        font-size: 7px;
     }
 
     .info {
@@ -189,7 +209,13 @@ footer a {
 }
 
 @media(max-width:324px) {
+
     .bar {
         max-width: 23px;
     }
+
+    .num {
+        font-size: 6px;
+    }
+
 }
