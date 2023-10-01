@@ -71,6 +71,7 @@ p {
     justify-content: center;
     align-items: end;
     margin: 32px 0 3px;
+    padding-top: calc(100% -20px);
 }
 
 .chart {
