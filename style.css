@@ -16,7 +16,6 @@ body {
     min-height: 100vh;
     width: 100vw;
     background-color: hsl(27, 66%, 92%);
-    padding: 2rem;
 }
 
 p {
@@ -79,41 +78,36 @@ p {
     background-color: hsl(10, 79%, 65%);
     cursor: pointer;
     border-radius: 5px;
+    width: 40.8px;
+
 }
 
 #bar1 {
     height: 40.65px;
-    width: 40.8px;
 }
 
 #bar2 {
     height: 81.33px;
-    width: 40.8px;
 }
 
 #bar3 {
     height: 116.49px;
-    width: 40.8px;
     background-color: hsl(186, 34%, 60%);
 }
 
 #bar4 {
     height: 72.38px;
-    width: 40.8px;
 }
 
 #bar5 {
-    width: 40.8px;
     height: 54.5px;
 }
 
 #bar6 {
-    width: 40.8px;
     height: 100.8px;
 }
 
 #bar7 {
-    width: 40.8px;
     height: 59.35px;
 }
 
@@ -129,7 +123,9 @@ hr {
 .info {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin: 1em 0em 0.7em 0em;
+    gap: 3rem;
 }
 
 .info h2,
@@ -145,12 +141,12 @@ h5 {
     font-size: 14.4px;
 }
 
-.last_month {
+/* .last_month {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     margin-top: 2rem;
-}
+} */
 
 footer {
     text-align: center;
@@ -161,4 +157,39 @@ footer {
 
 footer a {
     color: red;
+}
+
+@media(max-width:500px) {
+    .container {
+        width: 95%;
+    }
+
+    .charts {
+        gap: .5rem;
+        justify-content: space-around;
+    }
+
+    .bar {
+        max-width: 30px;
+    }
+
+    .info {
+        gap: 1rem;
+        display: flex;
+        margin: .5rem .1rem;
+    }
+
+    .info h2 {
+        font-size: 25px;
+    }
+
+    .info p {
+        font-size: 12px;
+    }
+}
+
+@media(max-width:324px) {
+    .bar {
+        max-width: 23px;
+    }
 }
