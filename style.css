@@ -16,6 +16,15 @@ body {
     min-height: 100vh;
     width: 100vw;
     background-color: hsl(27, 66%, 92%);
+    padding: 2rem;
+}
+
+p {
+    font-size: 0.9em;
+    font-weight: 400;
+    margin: auto;
+    color: hsl(27deg, 10%, 52%);
+    ;
 }
 
 .container {
@@ -36,6 +45,7 @@ body {
 
 .header p {
     font-size: 14.5px;
+    color: #fff;
 }
 
 .header h3 {
@@ -50,4 +60,47 @@ body {
     flex-direction: column;
     gap: .5rem;
     justify-content: center;
+}
+
+.title {
+    text-align: center;
+}
+
+.charts {
+    display: flex;
+    justify-content: space-between;
+}
+
+.chart p {
+    font-size: 12.8px;
+}
+
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    margin: 1em 0em 0.7em 0em;
+}
+
+.info h2,
+h5 {
+    color: hsl(25deg, 47%, 15%);
+}
+
+.last_month {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 2rem;
+}
+
+footer {
+    text-align: center;
+    font-size: 12px;
+    position: absolute;
+    bottom: 10px;
+}
+
+footer a {
+    color: red;
 }
